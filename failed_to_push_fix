@@ -1,0 +1,13 @@
+My solution
+My solution is to use git add . after the git init command.
+
+Use the following set of commands in the same order to overcome the problem:
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin "_git repository link here_"
+git push -u origin main
+
+use these commands.
