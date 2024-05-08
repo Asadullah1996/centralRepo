@@ -28,26 +28,7 @@ If you created your key with a different name, or if you are adding an existing 
 ssh-add ~/.ssh/id_ed25519
 Add the SSH public key to your account on GitHub. For more information, see "Adding a new SSH key to your GitHub account."
 
-Generating a new SSH key for a hardware security key
-If you are using macOS or Linux, you may need to update your SSH client or install a new SSH client prior to generating a new SSH key. For more information, see "Error: Unknown key type."
 
-Insert your hardware security key into your computer.
+to copy the key 
 
-Open Terminal.
-
-Paste the text below, replacing the email address in the example with the email address associated with your account on GitHub.
-
-ssh-keygen -t ed25519-sk -C "your_email@example.com"
-Note: If the command fails and you receive the error invalid format or feature not supported, you may be using a hardware security key that does not support the Ed25519 algorithm. Enter the following command instead.
-
- ssh-keygen -t ecdsa-sk -C "your_email@example.com"
-When you are prompted, touch the button on your hardware security key.
-
-When you are prompted to "Enter a file in which to save the key," press Enter to accept the default file location.
-
-> Enter a file in which to save the key (/home/YOU/.ssh/id_ed25519_sk):[Press enter]
-When you are prompted to type a passphrase, press Enter.
-
-> Enter passphrase (empty for no passphrase): [Type a passphrase]
-> Enter same passphrase again: [Type passphrase again]
-Add the SSH public key to your account on GitHub. For more information, see "Adding a new SSH key to your GitHub account."
+cat ~/.ssh/id_ed25519.pub
