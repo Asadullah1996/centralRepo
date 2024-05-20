@@ -1,0 +1,70 @@
+  192  git init
+  193  git add README.md
+  194  git commit -m "first commit"
+  195  git branch -M main
+  196  git remote add origin git@github.com:Asadullah1996/centralRepo.git
+  197  git push -u origin main
+  198  ssh -T git@github.com
+  199  sudo apt update
+  200  sudo apt install openssh-client
+  201  yum install openssh-client
+  202  yum update ssh
+  203  ssh-keygen -t rsa -b 4096 -C
+  204  ssh-keygen -t rsa -b 4096
+  205  eval "$(ssh-agent -s)"
+  206  ssh-add ~/.ssh/id_rsa
+  207  cd ..
+  208  cd .ssh
+  209  ssh-add ~/.ssh/id_rsa
+  210  sudo apt install xclip
+  211  xclip -sel clip < ~/.ssh/id_rsa.pub
+  212  ls
+  213  xclip -sel clip < ~/.ssh/id_rsa.pub
+  214  ssh -T git@github.com
+  215  ssh-keygen -t ed25519 -C "asadullah19967@gmail.com"
+  216  eval "$(ssh-agent -s)"
+  217  ssh-add ~/.ssh/id_ed25519
+  218  cat ~/.ssh/id_ed25519.pub
+  219  cd ..
+  220  cd singapurGit/
+  221  ssh -T git@github.com
+  222  git push -u origin master
+  223  git push -u origin main
+  224  history
+  225  git status
+  226  git clear
+  227  git --help
+  228  git rm superkey superkey.pub
+  229  git rm superkey
+  230  ls
+  231  rm superkey
+  232  rm superkey.pub
+  233  ls
+  234  rm -rf superkey.pub
+  235  rm -rf superkey
+  236  ls
+  237  cat > connect_with_git_using_ssh
+  238  git add .
+  239  git commit -m "how to connect with github using ssh"
+  240  git push -u origin main
+  241  ls
+  242  cd cookbooks/
+  243  chef exec ruby -c
+  244  chef exec ruby -c test-cookbook/recipes/test-recipe.rb
+  245  chef-client -zr "recipe[test-cookbook::test-recipe]"
+  246  ls
+  247  cd test-cookbook/
+  248  ls
+  249  tree
+  250  pwd
+  251  clear
+  252  cd ..
+  253  cat test-cookbook/recipe/recipe-cookbook
+  254  cat test-cookbook/recipe/test-recipe
+  255  cat test-cookbook/recipes/test-recipe
+  256  vi test-cookbook/recipes/test-recipe.rb
+  257  chef exec ruby -c
+  258  chef exec ruby -c test-cookbook/recipes/test-recipe
+  259  chef exec ruby -c test-cookbook/recipes/test-recipe.rb
+  260  chef-client -zr "recipe[test-cookbook::test-recipe]"
+  261  history
