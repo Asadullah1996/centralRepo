@@ -1,0 +1,66 @@
+General Knife Commands
+knife help: Displays a list of all knife commands and their subcommands.
+knife configure: Configures the knife tool.
+knife node list: Lists all nodes registered with the Chef server.
+knife node show NODE_NAME: Displays detailed information about a specific node.
+knife node delete NODE_NAME: Deletes a node from the Chef server.
+knife client list: Lists all clients registered with the Chef server.
+knife client show CLIENT_NAME: Displays detailed information about a specific client.
+knife client delete CLIENT_NAME: Deletes a client from the Chef server.
+knife cookbook create COOKBOOK_NAME: Creates a new cookbook.
+knife cookbook upload COOKBOOK_NAME: Uploads a cookbook to the Chef server.
+knife cookbook list: Lists all cookbooks on the Chef server.
+knife cookbook show COOKBOOK_NAME: Displays detailed information about a specific cookbook.
+knife environment list: Lists all environments on the Chef server.
+knife environment show ENVIRONMENT_NAME: Displays detailed information about a specific environment.
+knife environment create ENVIRONMENT_NAME: Creates a new environment.
+knife environment delete ENVIRONMENT_NAME: Deletes an environment from the Chef server.
+knife data bag create DATA_BAG_NAME: Creates a new data bag.
+knife data bag list: Lists all data bags on the Chef server.
+knife data bag show DATA_BAG_NAME: Displays detailed information about a specific data bag.
+knife data bag delete DATA_BAG_NAME: Deletes a data bag from the Chef server.
+knife data bag from file DATA_BAG_NAME FILE_PATH: Uploads a data bag item from a file to the Chef server.
+knife role create ROLE_NAME: Creates a new role.
+knife role list: Lists all roles on the Chef server.
+knife role show ROLE_NAME: Displays detailed information about a specific role.
+knife role delete ROLE_NAME: Deletes a role from the Chef server.
+Chef Client Commands
+Chef Client is the component that runs on the nodes to apply the configuration.
+
+General Chef Client Commands
+chef-client: Runs the Chef client on a node to apply the configuration.
+chef-client -o 'recipe[RECIPE_NAME]': Runs the Chef client with a specific recipe.
+chef-client --local-mode: Runs the Chef client in local mode, without requiring a Chef server.
+chef-client -j /path/to/attributes.json: Runs the Chef client with a specific set of node attributes from a JSON file.
+Chef Solo Commands
+Chef Solo is a legacy way to run Chef without requiring a Chef server.
+
+General Chef Solo Commands
+chef-solo: Runs Chef in solo mode.
+chef-solo -c /path/to/solo.rb: Specifies the configuration file to use for Chef Solo.
+chef-solo -j /path/to/attributes.json: Specifies the JSON attributes file to use for Chef Solo.
+Chef Zero Commands
+Chef Zero is an in-memory Chef server for testing and development.
+
+General Chef Zero Commands
+chef-zero: Starts a Chef Zero server.
+chef-client -z: Runs the Chef client in local mode, using Chef Zero.
+Berkshelf Commands
+Berkshelf is a dependency manager for Chef cookbooks.
+
+General Berkshelf Commands
+berks: Displays a list of available Berkshelf commands.
+berks init: Creates a new Berkshelf project.
+berks install: Installs the cookbooks specified in the Berksfile.
+berks upload: Uploads the cookbooks to the Chef server.
+berks vendor: Copies the cookbooks to a vendor directory.
+berks package: Packages the cookbooks into a tarball.
+Test Kitchen Commands
+Test Kitchen is an integration tool for testing Chef cookbooks.
+
+General Test Kitchen Commands
+kitchen list: Lists all instances defined in the .kitchen.yml file.
+kitchen converge: Applies the Chef configuration to an instance.
+kitchen verify: Runs the test suite on an instance.
+kitchen destroy: Destroys an instance.
+kitchen test: Runs a full test cycle (create, converge, verify, destroy).
